@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Student{% endblock %}
+
+{% block content %}
+
+<h2>Edit Student</h2>
+
+<form method="POST">
+
+    <div class="mb-3">
+        <input
+            type="text"
+            name="name"
+            class="form-control"
+            value="{{ student.name }}"
+        >
+    </div>
+
+    <div class="mb-3">
+        <input
+            type="email"
+            name="email"
+            class="form-control"
+            value="{{ student.email }}"
+        >
+    </div>
+
+    <div class="mb-3">
+        <input
+            type="text"
+            name="course"
+            class="form-control"
+            value="{{ student.course }}"
+        >
+    </div>
+
+    <button class="btn btn-success">
+        Update Student
+    </button>
+
+</form>
+
+{% endblock %}
