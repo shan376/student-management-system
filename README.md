@@ -1,3 +1,4 @@
-# Student Management System
 
-A Flask and MySQL based Student Management web application.
+## Development
+
+Student search functionality is being developed.
